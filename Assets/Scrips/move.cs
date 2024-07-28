@@ -421,6 +421,10 @@ public class move : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.forward * alcanse);
+
+       
+        Gizmos.color = Color.grey;
+        Gizmos.DrawWireCube(position, collisionsSize);
     }
 
 }
